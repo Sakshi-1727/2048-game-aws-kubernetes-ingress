@@ -217,12 +217,12 @@ Expected output:
 
 | NAME                                          | READY | STATUS  | RESTARTS | AGE   |
 | --------------------------------------------- | ----- | ------- | -------- | ----- |
-| aws-load-balancer-controller-5db9cb9959-7lskn | 1/1   | Running | 0        | 3m23s |
-| aws-load-balancer-controller-5db9cb9959-tpkbz | 1/1   | Running | 0        | 3m23s |
-| coredns-8448d8f9b5-gt6tn                      | 1/1   | Running | 0        | 60m   |
-| coredns-8448d8f9b5-pzsx6                      | 1/1   | Running | 0        | 60m   |
-| metrics-server-68cd648d99-ppz67               | 0/1   | Pending | 0        | 62m   |
-| metrics-server-68cd648d99-tjfpd               | 0/1   | Pending | 0        | 62m   |
+| aws-load-balancer-controller-5db9cb9959-7lskn | 1/1   | Running | 0        |  91s  |
+| aws-load-balancer-controller-5db9cb9959-tpkbz | 1/1   | Running | 0        |  91s  |
+| coredns-8448d8f9b5-gt6tn                      | 1/1   | Running | 0        |  53m  | 
+| coredns-8448d8f9b5-pzsx6                      | 1/1   | Running | 0        |  53m  |
+| metrics-server-68cd648d99-ppz67               | 0/1   | Pending | 0        |  55m  |
+| metrics-server-68cd648d99-tjfpd               | 0/1   | Pending | 0        |  55m  |
 
 - Metrics server might remain pending if not configured for Fargate.
 
@@ -238,7 +238,7 @@ Expected output:
 
 | NAME         | CLASS | HOSTS | ADDRESS                                       | PORTS | AGE  |
 | ------------ | ----- | ----- | --------------------------------------------- | ----- | ---- |
-| ingress-2048 | alb   | \*    | k8s-game2048-ingress2-xxxxx.elb.amazonaws.com | 80    | 106m |
+| ingress-2048 | alb   | \*    | k8s-game2048-ingress2-xxxxx.elb.amazonaws.com | 80    |  44m |
 
 🟢 Check the ALB DNS in browser once it Active:
 
@@ -350,6 +350,6 @@ kubectl config delete-context <cluster-name>
 
 ### 👨‍💻 Author
 
-Maintained by **[Krunal Bhandekar](https://www.linkedin.com/in/krunal-bhandekar/)**
+Maintained by **[Sakshi gongal](www.linkedin.com/in/sakshi-gongal-38346122)**
 
 ---
